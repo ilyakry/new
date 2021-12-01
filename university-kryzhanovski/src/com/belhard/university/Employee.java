@@ -1,6 +1,6 @@
 package com.belhard.university;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
 	private double Salary;
 
 	public void SetSalary(Double EmployeeSalary) {
@@ -22,6 +22,7 @@ public class Employee extends Person {
 	}
 
 	static class Teacher extends Employee {
+	
 		public void Info() {
 			System.out.println("Teacher: ");
 			System.out.println("Name: " + Name + " \tSurname: " + Surname + "\tAge: " + Age + "\tID: " + Id);
